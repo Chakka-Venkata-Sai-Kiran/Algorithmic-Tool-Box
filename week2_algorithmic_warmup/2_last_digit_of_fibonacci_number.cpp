@@ -8,9 +8,12 @@ int main()
     cout.tie(0);
     ll n;
     cin>>n;
-    if(n==0 || n==1)
-        return n;
     n=n%60;
+    if(n==0 || n==1)
+    {
+        cout<<n;
+        return 0;
+    }    
     ll a=0,b=1;
     for(ll i=2;i<=n;i++)
     {
